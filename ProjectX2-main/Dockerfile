@@ -22,7 +22,7 @@ RUN bazel --version
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/CodeIntelligenceTesting/cifuzz/main/install.sh)"
 
 #Provide your repository link below
-RUN git clone <your_repository_link>#https://github.com/shs-2024/software-and-hardware-security-submissions-2024-Worpaaja/tree/main
+RUN git clone https://github.com/Worpaaja/ProjectX2Cyber3 #https://github.com/shs-2024/software-and-hardware-security-submissions-2024-Worpaaja/tree/main
 
 WORKDIR /ProjectX/ProjectX2
 RUN ls -a
