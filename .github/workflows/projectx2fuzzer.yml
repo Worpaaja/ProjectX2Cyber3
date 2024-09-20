@@ -12,8 +12,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./ProjectX2-main
+        
     steps:
     - uses: actions/checkout@v4
-    - name: Build the Docker image
+    - name: Build and run the fuzzer
       run: ./build.sh
-           ./run.sh
+    - name: Build and run the fuzzer
+      run: ./run.sh
