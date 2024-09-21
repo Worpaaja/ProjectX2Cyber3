@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 #Default directory
-WORKDIR /ProjectX
+WORKDIR /ProjectX2Cyber3
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends python3 python3-pip git cmake libclang-rt-dev libclang-dev curl clang llvm lcov default-jdk zip && \
@@ -35,7 +35,7 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ouspg/ProjectX2/main/i
 #Provide your repository link below
 RUN git clone https://github.com/Worpaaja/ProjectX2Cyber3.git
 
-WORKDIR /ProjectX/ProjectX2.0
+WORKDIR /ProjectX2Cyber3/ProjectX2-main
 RUN ls -a
 
 CMD ["sh", "-c", "cifuzz run test1 > /ProjectX/ProjectX2.0/fuzzing.log 2>&1 && cat /ProjectX/ProjectX2.0/fuzzing.log"]
