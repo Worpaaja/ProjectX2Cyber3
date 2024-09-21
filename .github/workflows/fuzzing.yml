@@ -21,3 +21,4 @@ jobs:
     - name: Build and run the fuzzer
       run: |
         ./build.sh
+        ./run.sh
