@@ -35,10 +35,10 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ouspg/ProjectX2/main/i
 #Provide your repository link below
 RUN git clone https://github.com/Worpaaja/ProjectX2Cyber3.git
 
-WORKDIR /ProjectX2Cyber3/ProjectX2-main
+WORKDIR /ProjectX2Cyber3/ProjectX2Cyber3/ProjectX2-main
 RUN ls -a
 
-CMD ["sh", "-c", "cifuzz run test1 > /ProjectX/ProjectX2.0/fuzzing.log 2>&1 && cat /ProjectX/ProjectX2.0/fuzzing.log"]
+CMD ["sh", "-c", "cifuzz run test1 > /ProjectX2Cyber3/ProjectX2Cyber3/ProjectX2-main/fuzzing.log 2>&1 && cat /ProjectX2Cyber3/ProjectX2Cyber3/ProjectX2-main/fuzzing.log"]
 
 
 
