@@ -2,6 +2,10 @@
 
 int main() {
     //Sums
+    
+    //TESTING
+    
+    
     calculator(1.4, '+', -1);
     calculator(-4.4, '+', -2);
     calculator(-4.4565, '+', 2);
