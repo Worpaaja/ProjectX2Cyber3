@@ -14,7 +14,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE calculator)
 find_package(cifuzz NO_SYSTEM_ENVIRONMENT_PATH)
 enable_fuzz_testing()
 
-add_fuzz_test(test1 test/test.cpp)
+add_fuzz_test(test1 test/test1.cpp)
 
 target_link_libraries(test1 PRIVATE calculator)
 
