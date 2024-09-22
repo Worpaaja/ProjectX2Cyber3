@@ -22,6 +22,6 @@ jobs:
       run: 
         ./build.sh
         
-    -name: Run the container
+    - name: Run the container
       run:
         ./run.sh
